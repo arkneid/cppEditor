@@ -15,7 +15,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,7 +28,7 @@ public:
     QAction *actionSave;
     QAction *actionSave_As;
     QWidget *centralwidget;
-    QPlainTextEdit *plainTextEdit;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menuFile;
 
@@ -48,9 +48,9 @@ public:
         actionSave_As->setObjectName("actionSave_As");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        plainTextEdit = new QPlainTextEdit(centralwidget);
-        plainTextEdit->setObjectName("plainTextEdit");
-        plainTextEdit->setGeometry(QRect(0, 0, 801, 601));
+        textEdit = new QTextEdit(centralwidget);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(0, 0, 801, 601));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
