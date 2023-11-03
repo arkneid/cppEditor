@@ -83,3 +83,10 @@ void MainWindow::on_actionSave_As_triggered()
     }
 }
 
+
+void MainWindow::on_actionClose_triggered()
+{
+    ui->textEdit->clear();
+    this->path = "";
+}
+

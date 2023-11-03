@@ -24,6 +24,8 @@ private slots:
 
     void on_actionSave_As_triggered();
 
+    void on_actionClose_triggered();
+
 private:
     Ui::MainWindow *ui;
     QString path;
