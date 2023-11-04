@@ -34,6 +34,7 @@ void MainWindow::on_actionOpen_triggered()
             }
         }
         file.close();
+        ui->lineEdit->setText("File: " + this->path);
     }
 }
 
@@ -45,7 +46,7 @@ void MainWindow::on_actionExit_triggered()
 
 void MainWindow::on_actionSave_triggered()
 {
-    if(!this->path.isEmpty())
+    if(!this->path.isEmpty() && this->path != "None")
     {
         QFile file(this->path);
         QString text;
@@ -87,6 +88,7 @@ void MainWindow::on_actionSave_As_triggered()
 void MainWindow::on_actionClose_triggered()
 {
     ui->textEdit->clear();
-    this->path = "";
+    this->path = "None";
+    ui->lineEdit->setText("File: " + this->path);
 }
 
