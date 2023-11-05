@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/IMG">
+        <file>IMG/app.png</file>
+        <file>IMG/close.png</file>
+        <file>IMG/file.png</file>
+        <file>IMG/logout.png</file>
+        <file>IMG/save.png</file>
+    </qresource>
+</RCC>
